@@ -1,43 +1,64 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!--
+			https://tools.ietf.org/html/rfc2324
+			https://www.ietf.org/rfc/rfc2324.txt
+		-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Henrik Andersson</title>
-		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Heebo:400,800" rel="stylesheet">
 		<style>
-			html, body { display: flex; font-family: 'IBM Plex Mono', sans-serif; height: 100vh; margin: 0; padding: 0; }
-			.content, h1, p { margin: auto; padding: 0; }
-			h1 { color: #2000FF; font-size: 42px; text-align: center; }
-			p { font-size: 18px; padding: 10px; }
-			a, a:visited, a:active, a:focus { color: #2000FF; text-decoration: none; }
-			a:hover { text-decoration: underline; }
+			html, body {
+				background: rgba(92, 86, 250, 1);
+				color: rgba(253, 145, 177, 1);
+				display: flex;
+				font-family: 'Heebo', sans-serif;
+				height: 100vh;
+				margin: 0;
+				padding: 0;
+			}
 
-			@media (min-width: 550px) {
-				html, body { display: initial; }
-				.content { display: flex; height: 100vh; }
-				h1, p { flex: 1 50%; }
-				h1 { padding: 10px; }
-				p { padding: 10px 100px 10px 10px; }
+			.content {
+				max-width: 800px;
+				margin: auto;
+				padding: 0;
+			}
+
+			p {
+				font-size: 18px;
+				padding: 10px 30px;
+			}
+
+			a, a:visited, a:active, a:focus {
+				color: rgb(255, 255, 255);
+				text-decoration: none;
+			}
+
+			a:hover {
+				text-decoration: underline;
 			}
 
 			@media (min-width: 320px) and (max-width: 685px) {
-				p { padding: 10px; }
+				p {
+					padding: 10px;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="content">
-			<h1>
-				http418.se
-			</h1>
 			<p>
-				Hi! I'm Henrik - I am a freelance developer out of Stockholm!
-				Making the web pop with JavaScript and Python.
-				Firm believer in the web platform I strive to make as much use of the web as possible!
+				Hey, I'm Henrik!
+				<br/>
+				I am a JavaScript and Python developer out of Stockholm!
+				Being a firm believer in the web platform I strive to make as much use of the web as possible!
 				I've had the pleasures of working with many VC funded start ups, big and small.
 				Besides making cool stuff at work I also contribute back to the community
 				via <a href="https://stackoverflow.com/users/441387/henrik-andersson">Stackoverflow</a> and <a href="https://github.com/limelights/">Github</a>.
+				<br/>
+				<br/>
 				<a href="mailto:henrik@http418.se">Say hello!</a>
 			</p>
 		</div>
