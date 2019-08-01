@@ -1,95 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-120555058-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-120555058-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-			gtag('config', 'UA-120555058-1');
-		</script>
-		<!--
+      gtag("config", "UA-120555058-1");
+    </script>
+    <!--
 			https://tools.ietf.org/html/rfc2324
 			https://www.ietf.org/rfc/rfc2324.txt
 		-->
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="HTTP418 Consulting AB - Henrik Andersson Freelance Developer">
-		<meta property="og:site_name" content="http418.se">
-		<meta property="og:title" content="HTTP418 Consulting AB">
-		<meta property="og:url" content="http://http418.se/">
-		<meta property="og:type" content="profile">
-		<meta property="og:image" content="https://avatars1.githubusercontent.com/u/749113?s=400&v=4">
-		<title>Henrik Andersson</title>
-		<link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
-		<link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
-		<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
-		<link href="https://fonts.googleapis.com/css?family=Overpass:700" rel="stylesheet">
-		<style>
-			html, body {
-				background: #466B8B;
-				color: #FFE870;
-				display: flex;
-				font-display: 'fallback';
-				font-family: 'Overpass', sans-serif;
-				height: 100vh;
-				margin: 0;
-				padding: 0;
-			}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="HTTP418 Consulting AB - Henrik Andersson Freelance Developer"
+    />
+    <meta property="og:site_name" content="http418.se" />
+    <meta property="og:title" content="HTTP418 Consulting AB" />
+    <meta property="og:url" content="http://http418.se/" />
+    <meta property="og:type" content="profile" />
+    <meta
+      property="og:image"
+      content="https://avatars1.githubusercontent.com/u/749113?s=400&v=4"
+    />
+    <title>Henrik Andersson</title>
+    <link
+      href="https://www.google-analytics.com"
+      rel="preconnect"
+      crossorigin
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin />
+    <link
+      href="https://www.googletagmanager.com"
+      rel="preconnect"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=fallback"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body {
+        background: rgba(255, 255, 255, 1);
+        color: rgba(10, 139, 215, 1);
+        display: flex;
+        font-display: "fallback";
+        font-family: "Inconsolata", monospace;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
 
-			.content {
-				max-width: 800px;
-				margin: auto;
-				padding: 0;
-			}
+      .content {
+        max-width: 800px;
+        margin: auto;
+        padding: 0;
+      }
 
-			h1 {
-				font-size: 30px;
-				font-weight: 800;
-				margin: 0;
-				padding: 10px 30px;
-			}
+      h1 {
+        color: #000;
+        font-size: 30px;
+        font-weight: 800;
+        margin: 0;
+        padding: 10px 30px;
+      }
 
-			p {
-				font-size: 16px;
-				margin: 0;
-				padding: 0 30px;
-			}
+      p {
+        font-size: 24px;
+        margin: 0;
+        padding: 0 30px;
+      }
 
-			a, a:visited, a:active, a:focus {
-				color: #fff;
-				text-decoration: none;
-			}
+      a,
+      a:visited,
+      a:active,
+      a:focus {
+        color: rgb(104, 4, 24);
+        text-decoration: none;
+      }
 
-			a:hover {
-				text-decoration: underline;
-			}
+      a:hover {
+        text-decoration: underline;
+      }
 
-			@media (min-width: 320px) and (max-width: 685px) {
-				p, h1 {
-					padding: 10px;
-				}
-			}
-		</style>
-	</head>
-	<body>
-		<div class="content">
-			<h1>Hey, I'm Henrik!</h1>
-			<p>
-				I am a JavaScript and Python developer in Stockholm!
-				Being a firm believer in the web platform I strive to make as much use of the web as possible!
-				I've had the pleasures of working with many VC funded startups, big and small.
-				Besides making cool stuff at work I also contribute back to the community
-				via <a href="https://stackoverflow.com/users/441387/henrik-andersson" title="Henriks profile at Stackoverflow">Stackoverflow</a> 
-				and <a href="https://github.com/limelights/" title="Henriks profile on Github">Github</a>.
-				<br/>
-				<br/>
-				<a href="mailto:henrik@http418.se">Say hello!</a>
-			</p>
-		</div>
-	</body>
+      #shape {
+        position: fixed;
+        bottom: 300px;
+        right: 50px;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: rgb(240, 162, 167);
+      }
+
+      @media (min-width: 320px) and (max-width: 685px) {
+        p,
+        h1 {
+          padding: 10px;
+        }
+      }
+
+      @media (max-width: 1240px) {
+        #shape {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1>Hey, I'm Henrik!</h1>
+      <p>
+        <span>
+          I am a JavaScript and Python developer in Stockholm! Being a firm
+          believer in the web platform I strive to make as much use of the web
+          as possible! I've had the pleasures of working with many VC funded
+          startups, big and small. Besides making cool stuff at work I also
+          contribute back to the community via
+        </span>
+        <a
+          href="https://stackoverflow.com/users/441387/henrik-andersson"
+          title="Henriks profile at Stackoverflow"
+          >Stackoverflow</a
+        >
+        <span>
+          and
+        </span>
+        <a
+          href="https://github.com/limelights/"
+          title="Henriks profile on Github"
+          >Github</a
+        ><span>.</span>
+        <br />
+        <br />
+        <a href="mailto:henrik@http418.se">Say hello!</a>
+      </p>
+      <div id="shape"></div>
+    </div>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const nodes = document.querySelectorAll("div.content p *");
+        const parent = document.querySelector("div.content p");
+        const COLORS = [
+          "rgba(6, 95, 147, 1)",
+          "rgba(135, 4, 33, 1)",
+          "rgba(207, 14, 43, 1)",
+          "rgba(253, 146, 154, 1)",
+        ];
+
+        function recursiveInsert(nodes, nextSibling) {
+          if (nodes) {
+            const node = nodes.shift();
+            if (node) {
+              parent.insertBefore(node, nextSibling);
+              return recursiveInsert(nodes, node.nextSibling);
+            }
+          }
+        }
+
+        Array.prototype.map.call(nodes, node => {
+          if (node.tagName === "SPAN") {
+            const newNodes = node.textContent.split(" ").map(word => {
+              const span = document.createElement("span");
+              span.textContent = word !== "." ? " " + word : word;
+              span.style = `color: ${
+                COLORS[Math.floor(Math.random() * COLORS.length)]
+              }`;
+              return span;
+            });
+
+            recursiveInsert(newNodes, node.nextSibling);
+            parent.removeChild(node);
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
-
