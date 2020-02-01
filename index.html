@@ -32,7 +32,7 @@
       property="og:image"
       content="https://avatars1.githubusercontent.com/u/749113?s=400&v=4"
     />
-    <title>Henrik Andersson</title>
+    <title>HTTP418.</title>
     <link
       href="https://www.google-analytics.com"
       rel="preconnect"
@@ -45,141 +45,88 @@
       crossorigin
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata&display=fallback"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"
       rel="stylesheet"
     />
     <style>
       html,
       body {
-        background: rgba(255, 255, 255, 1);
-        color: rgba(10, 139, 215, 1);
+        background: white;
+        color: black;
         display: flex;
         font-display: "fallback";
-        font-family: "Inconsolata", monospace;
-        height: 100vh;
-        margin: 0;
-        padding: 0;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: 800;
       }
 
-      .content {
-        max-width: 800px;
-        margin: auto;
-        padding: 0;
+      #menu,
+      #content {
+        height: 30vh;
+        width: 30vw;
+        padding-top: 40px;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
       }
 
       h1 {
-        color: rgb(104, 4, 24);
-        font-size: 30px;
-        font-weight: 800;
-        margin: 0;
-        padding: 10px 30px;
+        font-family: "Arial Black", sans-serif;
+        font-size: 20px;
+        transform: rotate(90deg);
+        position: absolute;
+        top: 130px;
+        left: 335px;
+        text-transform: uppercase;
+        font-style: italic;
       }
 
-      p {
-        font-size: 24px;
-        margin: 0;
-        padding: 0 30px;
-      }
-
-      a,
-      a:visited,
-      a:active,
-      a:focus {
-        color: rgb(104, 4, 24);
-        text-decoration: underline;
-      }
-
-      #shape {
+      nav {
         position: fixed;
-        bottom: 300px;
-        right: 50px;
-        width: 400px;
-        height: 400px;
-        border-radius: 50%;
-        background: rgb(240, 162, 167);
+        top: 300px;
+        left: 280px;
       }
 
-      @media (min-width: 320px) and (max-width: 685px) {
-        p,
-        h1 {
-          padding: 10px;
-        }
-      }
-
-      @media (max-width: 1240px) {
-        #shape {
-          display: none;
-        }
+      ul {
+        list-style: none;
       }
     </style>
   </head>
   <body>
-    <div class="content">
-      <h1>Hey, I'm Henrik!</h1>
-      <p>
-        <span>
-          I am a JavaScript and Python developer in Stockholm! Being a firm
-          believer in the web platform I strive to make as much use of the web
-          as possible! I've had the pleasures of working with many VC funded
-          startups, big and small. Besides making cool stuff at work I also
-          contribute back to the community via
-        </span>
-        <a
-          href="https://stackoverflow.com/users/441387/henrik-andersson"
-          title="Henriks profile at Stackoverflow"
-          >Stackoverflow</a
-        >
-        <span>
-          and
-        </span>
-        <a
-          href="https://github.com/limelights/"
-          title="Henriks profile on Github"
-          >Github</a
-        ><span>.</span>
-        <br />
-        <br />
-        <a href="mailto:henrik@http418.se">Say hello!</a>
-      </p>
-      <div id="shape"></div>
+    <div id="menu">
+      <nav>
+        <ul>
+          <li><a href="mailto:henrik@http418.se?subject=Hello">contact</a></li>
+        </ul>
+      </nav>
+      <h1>henrik@http418.se</h1>
     </div>
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const nodes = document.querySelectorAll("div.content p *");
-        const parent = document.querySelector("div.content p");
-        const COLORS = [
-          "rgba(6, 95, 147, 1)",
-          "rgba(135, 4, 33, 1)",
-          "rgba(207, 14, 43, 1)",
-          "rgba(253, 146, 154, 1)",
-        ];
-
-        function recursiveInsert(nodes, nextSibling) {
-          if (nodes) {
-            const node = nodes.shift();
-            if (node) {
-              parent.insertBefore(node, nextSibling);
-              return recursiveInsert(nodes, node.nextSibling);
-            }
-          }
-        }
-
-        Array.prototype.map.call(nodes, node => {
-          if (node.tagName === "SPAN") {
-            const newNodes = node.textContent.split(" ").map(word => {
-              const span = document.createElement("span");
-              span.textContent = word !== "." ? " " + word : word;
-              span.style = `color: ${
-                COLORS[Math.floor(Math.random() * COLORS.length)]
-              }`;
-              return span;
-            });
-
-            recursiveInsert(newNodes, node.nextSibling);
-            parent.removeChild(node);
-          }
-        });
-      });
-    </script>
+    <div id="content">
+      i'm henrik! i'm based on stockholm and i love creating great applications
+      that generates value for your customers. coming up on my tenth year as a
+      software developer i'd like to think that i have a firm grasp on the web
+      platform. when i'm not working you can find me hanging out with my family,
+      in the streets skateboarding or in the hills snowboarding.
+      <br />
+      <br />
+      you can find me on
+      <a
+        href="https://stackoverflow.com/users/441387/henrikandersson"
+        title="Henriks profile at Stackoverflow"
+        >Stackoverflow</a
+      >
+      or
+      <a href="https://github.com/limelights/" title="Henriks profile on Github"
+        >Github</a
+      >
+      or shoot me an email
+      <!--
+        Flowbox
+        Spotify
+        Tictail
+        Billogram
+      -->
+    </div>
   </body>
 </html>
