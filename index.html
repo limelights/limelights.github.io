@@ -22,7 +22,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="HTTP418 Consulting AB - Henrik Andersson Freelance Developer"
+      content="HTTP418 Consulting AB - Henrik Andersson"
     />
     <meta property="og:site_name" content="http418.se" />
     <meta property="og:title" content="HTTP418 Consulting AB" />
@@ -53,17 +53,15 @@
       body {
         background: white;
         color: black;
-        display: flex;
         font-display: "fallback";
         font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: 800;
-      }
-
-      #menu,
-      #content {
-        height: 30vh;
-        width: 30vw;
-        padding-top: 40px;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
       }
 
       a {
@@ -71,62 +69,81 @@
         text-decoration: none;
       }
 
+      #menu {
+        text-align: center;
+      }
+
+      #content {
+        height: 30vh;
+        width: 20vw;
+        margin: 0 auto;
+        padding-top: 45px;
+      }
+
       h1 {
         font-family: "Arial Black", sans-serif;
         font-size: 20px;
         transform: rotate(90deg);
-        position: absolute;
-        top: 130px;
-        left: 335px;
         text-transform: uppercase;
         font-style: italic;
-      }
-
-      nav {
-        position: fixed;
-        top: 300px;
-        left: 280px;
+        position: absolute;
+        left: 0;
+        top: 140px;
       }
 
       ul {
         list-style: none;
       }
+
+      @media screen and (max-width: 700px) and (min-width: 400px) {
+        h1 {
+          left: -100px;
+        }
+
+        #content {
+          width: 40vw;
+        }
+      }
     </style>
   </head>
   <body>
-    <div id="menu">
-      <nav>
-        <ul>
-          <li><a href="mailto:henrik@http418.se?subject=Hello">contact</a></li>
-        </ul>
-      </nav>
+    <nav id="menu">
+      <ul>
+        <li><a href="mailto:henrik@http418.se?subject=Hello">contact</a></li>
+      </ul>
+    </nav>
+    <div style="position: relative;">
       <h1>henrik@http418.se</h1>
-    </div>
-    <div id="content">
-      i'm henrik! i'm based on stockholm and i love creating great applications
-      that generates value for your customers. coming up on my tenth year as a
-      software developer i'd like to think that i have a firm grasp on the web
-      platform. when i'm not working you can find me hanging out with my family,
-      in the streets skateboarding or in the hills snowboarding.
-      <br />
-      <br />
-      you can find me on
-      <a
-        href="https://stackoverflow.com/users/441387/henrikandersson"
-        title="Henriks profile at Stackoverflow"
-        >Stackoverflow</a
-      >
-      or
-      <a href="https://github.com/limelights/" title="Henriks profile on Github"
-        >Github</a
-      >
-      or shoot me an email
-      <!--
+      <div id="content">
+        welcome to http418! i'm based on stockholm and i love creating great
+        applications that generates value for your customers. coming up on my
+        tenth year as a software developer i'd like to think that i have a firm
+        grasp on the web platform. when i'm not working i usually hang out with
+        my family, in the streets skateboarding or in the hills snowboarding.
+        <br />
+        <br />
+        you can find me on
+        <a
+          href="https://stackoverflow.com/users/441387/henrikandersson"
+          title="Henriks profile at Stackoverflow"
+          >Stackoverflow</a
+        >
+        or
+        <a
+          href="https://github.com/limelights/"
+          title="Henriks profile on Github"
+          >Github</a
+        >
+        or
+        <a href="mailto:henrik@http418.se?subject=Hello"
+          >or shoot me an email</a
+        >
+        <!--
         Flowbox
         Spotify
         Tictail
         Billogram
-      -->
+      --></div>
     </div>
   </body>
 </html>
