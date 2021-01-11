@@ -26,7 +26,7 @@
     />
     <meta property="og:site_name" content="http418.se" />
     <meta property="og:title" content="HTTP418 Consulting AB" />
-    <meta property="og:url" content="http://http418.se/" />
+    <meta property="og:url" content="https://http418.se/" />
     <meta property="og:type" content="profile" />
     <meta
       property="og:image"
@@ -38,81 +38,69 @@
       rel="preconnect"
       crossorigin
     />
-    <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin />
     <link
       href="https://www.googletagmanager.com"
       rel="preconnect"
       crossorigin
     />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:800&display=swap"
-      rel="stylesheet"
-    />
     <style>
+      * {
+        box-sizing: border-box;
+        color: #000;
+      }
+
       html,
       body {
-        background: white;
-        color: black;
-        font-display: "fallback";
+        color: #000;
         font-family: Georgia, "Times New Roman", Times, serif;
         font-weight: 800;
         padding: 0;
         margin: 0;
-        box-sizing: border-box;
-        width: 100%;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: fit-content(100%);
+        grid-gap: 30px;
         max-width: 800px;
         margin: 0 auto;
       }
 
-      a {
-        color: black;
-        text-decoration: none;
-      }
-
       #menu {
         text-align: center;
-      }
-
-      #content {
-        height: 30vh;
-        width: 20vw;
-        margin: 0 auto;
-        padding-top: 45px;
+        grid-column: 1 / -1;
+        padding: 20px;
       }
 
       h1 {
         font-family: "Arial Black", sans-serif;
         font-size: 20px;
-        transform: rotate(90deg);
-        text-transform: uppercase;
         font-style: italic;
+        grid-column: 1 / 1;
+        grid-row: 2;
         position: absolute;
-        left: 0;
-        top: 140px;
+        text-transform: uppercase;
+        transform: translateX(-12%) translateY(615%) rotate(90deg);
       }
 
-      ul {
-        list-style: none;
+      #content {
+        grid-column-start: 2;
+        grid-column: 2 / 4;
       }
 
-      @media screen and (max-width: 700px) and (min-width: 400px) {
+      @media screen and (max-width: 375px) {
         h1 {
-          left: -100px;
-        }
-
-        #content {
-          width: 40vw;
+          transform: translateX(-30%) translateY(643%) rotate(90deg);
         }
       }
     </style>
   </head>
   <body>
-    <nav id="menu">
-      <ul>
-        <li><a href="mailto:henrik@http418.se?subject=Hello">contact</a></li>
-      </ul>
-    </nav>
-    <div style="position: relative;">
+    <div class="grid">
+      <nav id="menu">
+        <a href="mailto:henrik@http418.se?subject=Hello">contact</a>
+      </nav>
       <h1>henrik@http418.se</h1>
       <div id="content">
         welcome to http418! i'm based on stockholm and i love creating great
@@ -139,11 +127,12 @@
           >or shoot me an email</a
         >
         <!--
-        Flowbox
-        Spotify
-        Tictail
-        Billogram
-      --></div>
+          Flowbox
+          Spotify
+          Tictail
+          Billogram
+        -->
+      </div>
     </div>
   </body>
 </html>
