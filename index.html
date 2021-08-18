@@ -43,20 +43,31 @@
       rel="preconnect"
       crossorigin
     />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
     <style>
       * {
         box-sizing: border-box;
-        color: #191919;
+        color: rgb(235, 51, 50);
       }
 
       html,
       body {
-        font-family: "Poppins", sans-serif;
+        font-family: 'Libre Franklin', sans-serif;
         font-weight: 800;
         padding: 0;
         margin: 0;
+        background: rgb(243,239,216);
+      }
+
+      h1 {
+        text-transform: uppercase;
+        font-family: 'Gochi Hand', sans-serif;
+        font-size: 72px;
+        margin: 0;
+        padding: 0;
       }
 
       .wrapper {
@@ -65,9 +76,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-image: url('ptrn.png');
-        background-repeat: repeat;
-        background-color: #ffef03;
+        background: linear-gradient(0deg, rgba(243,239,216,1) 25%, rgba(223,193,196,1) 76%);
       }
 
       .content {
@@ -82,17 +91,11 @@
       }
 
       a {
-        color: #191919;
+        color: rgb(235, 51, 50);
       }
 
       a:hover {
-        color: #1E22FB;
-      }
-
-      h1 {
-        font-size: 50px;
-        margin: 0;
-        padding: 0;
+        color: #fff;
       }
 
       #peace {
@@ -107,13 +110,7 @@
       }
 
       @media screen and (min-width: 48em) {
-        .wrapper {
-          background: none;
-        }
         .content {
-          background-image: url('ptrn.png');
-          background-repeat: repeat;
-          background-color: #ffef03;
           max-width: 400px;
           max-height: 600px;
           border-radius: 20px;
@@ -123,7 +120,6 @@
   </head>
   <body>
     <div class="wrapper">
-
       <div class="content">
         <h1>Http418</h1>
         <p>
@@ -154,7 +150,7 @@
           <p>✌️</p>
         </div>
           <!--
-	  Soundtrap
+          Soundtrap
           Flowbox
           Spotify
           Tictail
