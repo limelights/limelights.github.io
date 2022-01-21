@@ -46,9 +46,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kaushan+Script&display=swap" rel="stylesheet">
     <style>
+      :root {
+        --bg-color: rgba(121,210,191, 1);
+        --header-color: rgba(217, 140, 150, 1);
+        --slap-color: rgba(70, 162, 213, 1);
+        --border-color: rgba(255, 255, 255, 1);
+      }
+
       * {
         box-sizing: border-box;
-        background-color: rgba(227,	132,	158, 1);
+        background-color: var(--bg-color);
       }
 
       html,
@@ -65,6 +72,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        border: 30px solid var(--border-color);
       }
 
       .content {
@@ -79,11 +87,11 @@
         font-size: 70px;
         margin: 0;
         padding: 0;
-        color: rgba(72, 159, 123, 1);
+        color: var(--header-color);
       }
 
       #slap {
-        color: rgba(237, 211, 107, 1);
+        color: var(--slap-color);
         font-family: "Kaushan Script", cursive;
         font-size: 35px;
         position: absolute;
@@ -106,7 +114,7 @@
         justify-content: space-between;
         width: 100%;
         opacity: 0.3;
-        padding: 0 20px;
+        bottom: 60px;
       }
 
       #mail {
@@ -121,7 +129,7 @@
       }
 
       .link > a {
-        color: rgba(237, 211, 107, 1);
+        color: var(--slap-color);
       }
 
       a,
@@ -167,7 +175,7 @@
           <img src="https://static.soundtrap.com/public/images/logo-soundtrap.svg" alt="Soundtrap" class="icon">
         </a>
         <a href="https://tictail.com" target="_blank">
-          <svg version="1.1" id="layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 652 652" style="enable-background:new 0 0 652 652;" xml:space="preserve" class="icon">
+          <svg viewBox="200 200 252 252" xmlns="http://www.w3.org/2000/svg" class="icon" height="35px">
             <path d="M168.9,229.9c-13.5,0-23.7,9.1-23.7,21.2c0,11.9,10.2,21.2,23.7,21.2s23.7-9.3,23.7-21.2C192.6,239,182.4,229.9,168.9,229.9
               z M540.5,229.9c-13.7,0-23.7,9.1-23.7,21.2c0,11.9,10,21.2,23.7,21.2c13.5,0,23.7-9.3,23.7-21.2C564.3,239,554,229.9,540.5,229.9z
               M20.5,276.9h34.2v131.2h43.7V276.9h34.2V242H20.5V276.9z M578,242v166h42.6V242H578z M355.2,259h-22.3l-34,54.7v0.9h13.7V376
